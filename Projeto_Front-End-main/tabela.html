@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            thead{
+                border: solid 2px black;
+                background-color: black;
+                color: whitesmoke;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            td {
+                border: solid 1px black;
+            }
+            tfoot {
+                border: solid 2px black;
+                border: solid 2px black;
+                background-color: black;
+                color: whitesmoke;
+                font-size: 13px;
+            }
+            tbody {
+                background-color: aliceblue;
+            }
+
+            tbody td:first-child{
+                font-weight: bold;
+                font-variant: small-caps;
+            }
+
+            tbody td:last-child{
+                background-color: #ff00008a;
+                color: red;
+                font-weight: bold;
+            }
+
+            tbody tr:first-child td:last-child{
+                background-color: #0000ff8a;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="6">Consulta do Banco de Dados</td>
+                </tr>
+                <tr>
+                    <td>Nome</td>
+                    <td>1° Trimestre</td>
+                    <td>2° Trimestre</td>
+                    <td>3° Trimestre</td>
+                    <td>Média</td>
+                    <td>Situação</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Augusto Liberato</td>
+                    <td>8,7</td>
+                    <td>9,2</td>
+                    <td>6,4</td>
+                    <td>7,7</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Fausto Silva</td>
+                    <td>4,0</td>
+                    <td>5,0</td>
+                    <td>6,0</td>
+                    <td>5,0</td>
+                    <td>Reprovado</td>
+                </tr>
+                <tr>
+                    <td>Zé Ti</td>
+                    <td>3,0</td>
+                    <td>0,5</td>
+                    <td>2,0</td>
+                    <td>1,8</td>
+                    <td>Reprovado</td>
+                </tr>
+                <tr>
+                    <td>Tedão</td>
+                    <td>0,0</td>
+                    <td>0,0</td>
+                    <td>6,0</td>
+                    <td>2,0</td>
+                    <td>Reprovado</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Consulta executada com sucesso, encontrado 4 linhas.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+    </body>
+</html>

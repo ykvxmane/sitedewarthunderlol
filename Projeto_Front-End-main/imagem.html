@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Áreas da Imagem</title>
+    </head>
+    <body>
+        <h1>Image Map</h1>
+        <p>Clique em lugares específicos da imagem</p>
+
+        <img src="sala.jpg" alt="Imagem de uma sala de estar" usemap="#imgmap" height="600px">
+        
+        <map name="imgmap">
+            <area shape="rect" coords="538,123,578,226" href="#" onclick="relogio()">
+            <area shape="circle" coords="824,326,50" href="#" onclick="planta()">
+            <area shape="" coords="" href="" onclick="">
+        </map>
+
+        <script>
+            function relogio() {
+                alert("Você clicou no relógio!");
+            }
+            function planta() {
+                alert("Você clicou na planta!");
+            }
+        </script>
+    </body>
+</html>
